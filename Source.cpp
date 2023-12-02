@@ -13,10 +13,11 @@ T half(T number)
 	return (number / 2);
 }
 
-template <int> // template for integers
-int half(int number)
+
+int half(int number) // function for integers
 {
-	return round(static_cast<float>(number / 2));
+	float newNumber = static_cast<float>(number) / 2;
+	return round(newNumber);
 }
 
 

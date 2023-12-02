@@ -3,6 +3,7 @@
 // December 1, 2023
 
 #include<cmath>
+#include<iostream>
 
 using namespace std;
 
@@ -21,8 +22,15 @@ int half(int number)
 
 int main()
 {
+	// initializes variables to hold test values
+	double testDouble = 45.93;
+	float testFloat = 32.71;
+	int testInt = 9;
 
-
+	// desplays the results of the half template functions with the test values
+	cout << half(testDouble) << endl;
+	cout << half(testFloat) << endl;
+	cout << half(testInt) << endl << endl;
 
 	return 0;
 }
